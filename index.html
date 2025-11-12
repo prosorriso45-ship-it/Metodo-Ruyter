@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Método Ruyter</title>
+  <link rel="stylesheet" href="style.css">
+  <meta name="description" content="Método Ruyter - Seu caminho prático para liberdade financeira.">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1 class="logo">Método Ruyter</h1>
+      <nav class="nav">
+        <a href="#inicio">Início</a>
+        <a href="#contato">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="inicio" class="hero">
+    <div class="container hero-inner">
+      <div class="hero-text">
+        <h2>Transforme metas em dinheiro real</h2>
+        <p>
+          O Método Ruyter é um plano prático, humano e direto para você organizar suas finanças,
+          criar fontes de renda e construir liberdade financeira — mesmo começando do zero.
+        </p>
+
+        <ul class="benefits">
+          <li>Passo a passo simples e aplicável</li>
+          <li>Estratégias para gerar renda com o que você já sabe</li>
+          <li>Rotina prática para resultados consistentes</li>
+        </ul>
+
+        <div class="cta-row">
+          <!-- Substitua 55SEUNUMERO pelo seu número real de WhatsApp -->
+          <a class="btn primary" href="https://wa.me/55SEUNUMERO" target="_blank" rel="noopener">Fale comigo no WhatsApp</a>
+          <a class="btn ghost" href="#contato">Quero saber mais</a>
+        </div>
+      </div>
+
+      <div class="hero-image">
+        <div class="img-placeholder">Sua imagem aqui</div>
+      </div>
+    </div>
+  </main>
+
+  <section id="contato" class="contact container">
+    <h3>Contato</h3>
+    <p>Quer saber como começar? Me mande uma mensagem no WhatsApp e eu te respondo rápido.</p>
+
+    <div class="contact-grid">
+      <div class="contact-card">
+        <h4>Direto no WhatsApp</h4>
+        <p>Clique no botão e inicie uma conversa agora mesmo.</p>
+        <a class="btn primary" href="https://wa.me/55SEUNUMERO" target="_blank" rel="noopener">Fale comigo no WhatsApp</a>
+      </div>
+
+      <form class="contact-form" onsubmit="submitted(event)">
+        <label>Nome
+          <input type="text" id="name" placeholder="Seu nome" required>
+        </label>
+        <label>Mensagem
+          <textarea id="message" rows="4" placeholder="Quero saber mais sobre o Método Ruyter" required></textarea>
+        </label>
+        <button class="btn ghost" type="submit">Enviar</button>
+        <p class="small">Ao enviar, você aceita que entraremos em contato via WhatsApp.</p>
+      </form>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2025 Método Ruyter — Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+<script>
+function submitted(e){
+  e.preventDefault();
+  const name = document.getElementById('name').value.trim();
+  const msg = document.getElementById('message').value.trim();
+  const phone = '55SEUNUMERO'; // substitua pelo seu número
+  const text = encodeURIComponent("Olá, meu nome é " + name + ". " + msg);
+  window.open('https://wa.me/' + phone + '?text
